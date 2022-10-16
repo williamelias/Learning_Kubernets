@@ -46,7 +46,7 @@ Pods share:
 - Ip
 - Volume
 
-!(podimage)[./kubernets-pods.drawio.png]
+![](Kubernets-pods.drawio.png)
 
 Use cases:
 
@@ -59,9 +59,9 @@ The pod ip isn't enabled to outside node access and it is recommended to access 
 Cluster is composed by Nodes.
 
 
-!(podimage)[./kubernets-cluster.drawio.png]
+![](Kubernets-cluster.drawio.png)
 
-!(podimage)[./kubernets-node.drawio.png]
+![](Kubernets-node.drawio.png)
 
 
 The types of Nodes:
@@ -69,7 +69,7 @@ The types of Nodes:
 - master: It management, mantain and receive commands from api kubernets 
 - worker: execute pods and aplications
 
-!(podimage)[./kubernets-node.drawio.png]
+![](Kubernets-node.drawio.png)
 
 
 ### Cluster management
@@ -81,7 +81,7 @@ kubernets cluster.
 
 The deployment make sense when you want management pods automatic, realizing actions as desire and scale quantity of the pods
 
-!(replicasetAndDeployment)[./kubernets-replicaset_and_deployment.drawio.png]
+![](Kubernets-replicaset_and_deployment.drawio.png)
 
 ## Service
 
