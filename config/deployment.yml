@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-django
+spec:
+  selector:
+    matchLabels:
+      app: backend-django
+  template:
+    metadata:
+      labels:
+        app: backend-django
+    spec:
+      containers:
+        - name: backend-django
+          image: williameliasalves/desafio_backend:latest
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "200m"
+          ports:
+            - containerPort: 8080
+  replicas: 2 # modify quantity of the replicas, set the number of the working pods.
