@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-nginx
+spec:
+  selector:
+    matchLabels:
+      app: backend-nginx
+  template:
+    metadata:
+      labels:
+        app: backend-nginx
+    spec:
+      containers:
+        - name: backend-nginx
+          image: williameliasalves/backend_nginx:latest
+          resources:
+            limits:
+              memory: "100Mi"
+              cpu: "200m"
+          ports:
+            - containerPort: 80

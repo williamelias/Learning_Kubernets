@@ -7,5 +7,5 @@ spec:
   selector:
     app: backend-django
   ports:
-    - port: 8000 #port to external access
+    - port: 8080 # port to external access
       targetPort: 8080 # target port to pod

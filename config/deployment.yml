@@ -16,8 +16,8 @@ spec:
           image: williameliasalves/desafio_backend:latest
           resources:
             limits:
-              memory: "128Mi"
-              cpu: "200m"
+              memory: "150Mi"
+              cpu: "500m"
           ports:
             - containerPort: 8080
-  replicas: 2 # modify quantity of the replicas, set the number of the working pods.
+  replicas: 1 # modify quantity of the replicas, set the number of the working pods.
