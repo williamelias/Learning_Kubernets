@@ -87,6 +87,7 @@ The deployment make sense when you want management pods automatic, realizing act
 
 This resources make your aplication available to external access or on ClusterIP case defines only one local to access any
 pods inside the cluster.
+
 Types:
     - ClusterIP : This allows to connect from  any kubernets pods inside of cluster
         
